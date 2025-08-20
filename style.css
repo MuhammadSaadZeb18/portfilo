@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 0 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.4rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+  gap: 2em;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+  color: #00aced;
+}
+
+main {
+  padding: 2em 0;
+}
+
+.profile-img {
+  width: 50%;
+  border-radius: 50%;
+  margin-top: 1em;
+}
+
+.skills {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.skills li {
+  margin: 1rem 0;
+  width: fit-content;
+  padding: 1rem;
+  transition: 0.3s all;
+}
+.skills li:hover {
+  box-shadow: 0 0 3px gray;
+  cursor: pointer;
+  transform: translateY(-1rem);
+}
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  margin-bottom: 1em;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px;
+
+  background-color: #00aced;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #00aced;
+}
+
+footer {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.summary,
+.goal {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #fff;
+  border-left: 4px solid #00aced;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.summary h2,
+.goal h2 {
+  margin-bottom: 0.5em;
+  color: #00aced;
+}
+
+.logo {
+  color: #555;
+  font-size: 1.6rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+}
+
+.intro {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .profile-img {
+    width: 100%;
+  }
+  .intro {
+    flex-direction: column;
+  }
+}
